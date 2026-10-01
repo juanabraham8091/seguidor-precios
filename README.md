@@ -51,6 +51,8 @@ Si la extensión no encuentra el precio sola, pulsa **Marcar el precio en la pá
 
 Todo se guarda en tu navegador (`chrome.storage.local`). La extensión no tiene servidor propio y no envía tus datos a ningún sitio: solo visita las páginas de los productos que sigues.
 
+Política de privacidad completa: [PRIVACIDAD.md](PRIVACIDAD.md).
+
 ## Limitaciones
 
 - Las revisiones automáticas solo ocurren con el navegador abierto.
