@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Seguidor de Precios</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="icons/icon32.png" alt="" width="20" height="20">
+      <h1>Seguidor de Precios</h1>
+    </div>
+    <span id="count" class="pill"></span>
+  </header>
+
+  <section id="current" class="card" aria-live="polite"></section>
+  <p id="status" role="status"></p>
+
+  <section>
+    <div class="section-head">
+      <h2>Productos que sigues</h2>
+      <button id="check-all" class="link" hidden>↻ Revisar todos</button>
+    </div>
+    <ul id="list" class="list"></ul>
+  </section>
+
+  <details>
+    <summary>Ajustes</summary>
+    <label class="row">
+      Revisar precios
+      <select id="interval">
+        <option value="1">cada hora</option>
+        <option value="3">cada 3 horas</option>
+        <option value="6">cada 6 horas</option>
+        <option value="12">cada 12 horas</option>
+        <option value="24">una vez al día</option>
+      </select>
+    </label>
+    <label class="check">
+      <input id="notify-any" type="checkbox">
+      Avisarme de cualquier bajada (si no, solo cuando llegue a mi precio objetivo)
+    </label>
+    <p class="hint">Todo se guarda en tu navegador. La extensión solo visita las páginas de los productos que sigues.</p>
+  </details>
+
+  <script src="extractor.js"></script>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

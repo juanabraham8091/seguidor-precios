@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Seguidor de Precios",
+  "version": "1.0.0",
+  "description": "Sigue el precio de cualquier producto y recibe un aviso cuando baje o llegue al precio que quieres.",
+  "minimum_chrome_version": "116",
+  "permissions": ["storage", "alarms", "notifications", "scripting", "activeTab", "offscreen"],
+  "optional_host_permissions": ["https://*/*", "http://*/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Seguidor de Precios",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
